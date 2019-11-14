@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--***********************STYLES************************-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/images/Favicon.png" />
+
+    <!--***********************SCRIPTS************************-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    <script type="text/javascript" src="assets/js/graph.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+
+    <title>ShadowRacingAI</title>
+</head>
+
+<body>
+
+    <!--*****LANDING PAGE*****-->
+
+    <header id="home">
+        <!--*****NAVBAR TOGGLER SECTION COLLAPSED AT ALL TIMES*****-->
+        <nav class="navbar fixed-top navbar-right">
+            <a href="" class="navbar-brand"></a>
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#shadow-nav" aria-controls="navbar" aria-expanded="false">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-ellipsis-v"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="shadow-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#results">RESULTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#affiliates">AFFILIATES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">STATISTICS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">RACECOURSES</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--*****HOME PAGE BACKGROUND, LOGO & ICON*****-->
+        <div class="bg-img">
+            <div id="logo">
+                <img src="./assets/images/trans.png" class="text-center full-logo">
+            </div>
+            <div class="tagline text-center">Using Artificial Intelligence to beat the horse markets</div>
+            <a href="#aboutus">
+                <i class="fas fa-chevron-circle-down text-center" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+
+    <!--*****ABOUT US SECTION*****-->
+
+    <section id="aboutus">
+        <div class="container-fluid">
+            <div class="row aboutus-section text-center">
+                <div class="col-sm-6">
+                    <h3 class="about-heading uppercase ">
+                        Who are Shadow Racing AI?
+                    </h3>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <p class="about-us-text">The Shadow Racing team is made up of individuals with a love for sport, coupled with an insatiable drive to use smart technology to predict the outcome of sporting events. For years people have tried to get a statistical edge in the
+                        horse markets and now with the rise of AI and machine learning we’re able to leverage the power of computers to find those edges for us. This means providing our users with a consistent monthly profit and a high return on investment.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="about-heading uppercase">
+                        How does the system work?
+                    </h3>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <p class="about-us-text">Tips are provided prior to 11:00am via email, so no sitting infront of a computer all day. Odds range from 2/1 all the way up to 14/1. As with any tipping service it’s important that users place each bet and attempt to obtain the best
+                        odds available to them. Over the past 12 months our selections have made a profit at the Betfair Starting Price, however placing the bets with a Best Odds Guaranteed bookmaker at the time of release will yield the best returns.
+                        You can see our full year results on the chart below.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*****RESULTS SECTION*****-->
+
+    <section id="results">
+        <div class="container-fluid results-section text-center">
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-poll " aria-hidden="true"></i>
+                    <h3 class="results-heading uppercase ">
+                        our results
+                    </h3>
+                    <h5 class="results-message uppercase">
+                        the chart below shows our points profit at the median bookmaker price
+                    </h5>
+                </div>
+            </div>
+            <!--*****RESPONSIVE CHART IMAGE*****-->
+            <div>
+                <div id="chart" class="row chart-section">
+                    <div class="col">
+                        <img src="./assets/images/chart2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*****CONTACT FORM*****-->
+
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row contact-section text-center">
+                <div class="col">
+                    <i class="fas fa-envelope-open-text " aria-hidden="true"></i>
+                    <h3 class="contact-heading uppercase">
+                        Want to know more or request access to our system?
+                    </h3>
+                    <h5 class="contact-message uppercase">
+                        Send us a message using the form below
+                    </h5>
+                    <form class="center-form" action="mailto:richard.hepworth@gmail.com">
+                        <input type="text" name="name" id="fullname" class="form-control form-margin" placeholder="Name" required="true" />
+                        <input type="text" name="email" id="emailaddress" class="form-control form-margin" placeholder="Email" required="true" />
+                        <input type="text" name="phone" id="phonenumber" class="form-control form-margin" placeholder="Mobile Number" required="true" />
+                        <textarea rows="5" name="message" id="message" class="form-control form-margin" placeholder="Type your message here" required="true"></textarea>
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary uppercase">Request access now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*****COURSE SECTION*****-->
+
+    <section id="courses">
+        <div class="container-fluid">
+            <div class="row course-heading text-center">
+                <div class="col">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <h3 class="uppercase">
+                        Racecourses
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="map"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h5 class="course-message uppercase">
+                        Fancy a day out at the races?
+                    </h5>
+                    <h5 class="course-message uppercase">
+                        The map below shows the location of the racecourses throughout the UK
+                    </h5>
+                    <h5 class="course-message uppercase">
+                        Click on the pins to see the course details
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*****AFFILIATES SECTION*****-->
+
+    <section id="affiliates">
+        <div class="container-fluid">
+            <div class="row affiliate-heading text-center">
+                <div class="col">
+                    <i class="fas fa-handshake " aria-hidden="true"></i>
+                    <h3 class="uppercase">
+                        affiliates
+                    </h3>
+                    <h5 class="affiliate-message uppercase">
+                        Click the bookmaker logos below to take advantage of our special offers
+                    </h5>
+                </div>
+            </div>
+            <div id="affiliate-link" class="row text-center">
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.ladbrokes.com/">
+                        <img src="./assets/images/Ladbrokes.jpg" class=" bookie-logo">
+                    </a>
+                    <h5 class="bookie ">Ladbrokes</h5>
+                    <h6 class="offer-text">Free £50 bet when place a bet of £20</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.bet365.com/">
+                        <img src="./assets/images/Bet365.jpg" class="bookie-logo">
+                    </a>
+                    <h5 class="bookie ">Bet365</h5>
+                    <h6 class="offer-text">£200 of free bets when you join now</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.williamhill.com/">
+                        <img src="./assets/images/WilliamHill.jpg" class="bookie-logo">
+                    </a>
+                    <h5 class="bookie ">William Hill</h5>
+                    <h6 class="offer-text ">Free £10 Bet when you join</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.betvictor.com/">
+                        <img src="./assets/images/BetVic.jpg" class=" bookie-logo">
+                    </a>
+                    <h5 class="bookie ">Bet Victor</h5>
+                    <h6 class="offer-text">Free £25 Bet, sign up today</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.betfair.com/exchange">
+                        <img src="./assets/images/Betfair.jpg" class=" bookie-logo">
+                    </a>
+                    <h5 class="bookie">Betfair</h5>
+                    <h6 class="offer-text ">Free £20 bet when you join now</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.smarkets.com/">
+                        <img src="./assets/images/smarkets.jpg" class="bookie-logo">
+                    </a>
+                    <h5 class="bookie">Smarkets</h5>
+                    <h6 class="offer-text ">£100 of free bets when you join now</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.matchbook.com/">
+                        <img src="./assets/images/matchbook.jpg" class=" bookie-logo">
+                    </a>
+                    <h5 class="bookie">Matchbook</h5>
+                    <h6 class="offer-text ">3 x free £10 Bet when you join</h6>
+                </div>
+                <div class="col-sm-3">
+                    <a target="_blank" href="https://www.betdaq.com/">
+                        <img src="./assets/images/Betdaq.jpg" class=" bookie-logo">
+                    </a>
+                    <h5 class="bookie">Betdaq</h5>
+                    <h6 class="offer-text ">Bet £20 get £20 as a free bet</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*****FOOTER SECTION*****-->
+
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-3">
+                <h5 class="uppercase footer-heading">user guide</h5>
+                <p>Download a copy of our user guide</p>
+                <a href="./assets/images/userguide.png" target="_blank" class="userguide">
+                    <i class="fa fa-file-download" aria-hidden="true"></i>
+                    <span class="sr-only">Download Link</span>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="uppercase footer-heading">legal</h5>
+                <div>
+                    <a href="./assets/docs/TCs.docx" class="legal">Terms & Conditions</a>
+                </div>
+                <div class="legal">
+                    <a href="./assets/docs/Disclaimer.docx" class="legal">Disclaimer</a>
+                </div>
+            </div>
+            <div class="contact-details col-sm-3">
+                <h5 class="uppercase footer-heading">contact details</h5>
+                <p>Address: 5 Harcourt Road, Dublin, D02</p>
+                <p>Phone: +44 7881 941 425</p>
+                <p>Email: info@shadowracing.ai</p>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="uppercase footer-heading">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item text-center">
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item text-center">
+                        <a target="_blank" href="https://www.twitter.com/">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item text-center">
+                        <a target="_blank" href="https://www.linkedin.com/">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD87azRZ3Xn6nJm5UCbXGyaKbmUACgPiAs&callback=initMap">
+    </script>
+</body>
+
+</html>

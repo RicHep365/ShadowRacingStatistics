@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald: 100,200,300,400,500|Source+Sans+Pro:100,200,300,400,500|Raleway:100,200,300,400,500|Montserrat:100,200,300,400,500');
+
+/*Taken from https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*----------------------*/
+
+
+/*------------------------------------------General*/
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.muted {
+    font-family: "source sans pro", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgb(71, 71, 71);
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+
+/*------------------------------------------Center Icons*/
+
+.fa-poll,
+.fa-envelope-open-text,
+.fa-handshake,
+.fa-map-marked-alt,
+.fa-chart-line {
+    font-size: 50px;
+    Margin-top: 40px;
+    color: #e0443c;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*--------------------------------------------nav*/
+
+
+/*Found in Stackoverflow on search to remove toggler border*/
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    padding-top: 13px;
+    padding-right: 12px;
+}
+
+.navbar-toggler i {
+    color: #45D6A3;
+    font-size: 35px;
+}
+
+.nav-link {
+    font-family: "Oswald", san-serif;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    font-weight: 100;
+    margin-right: 20px;
+    color: #45D6A3;
+    text-align: right;
+}
+
+.nav-item a:hover {
+    color: #699bcf;
+}
+
+.nav-item a:active {
+    color: #699bcf;
+    font-weight: 300;
+}
+
+
+/*--------------------------------------------Heading*/
+
+.bg-stat,
+.bg-img {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-img {
+    background-image: linear-gradient(to bottom, #475867a9, #374450e0), url(../images/Horsesmain.jpg);
+}
+
+.bg-stat {
+    max-width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #576169cb, #4f575ee0), url(../images/AIgif.gif);
+}
+
+#logo {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out 1s;
+}
+
+#stat-logo {
+    padding-top: 70px;
+    margin-bottom: -120px;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out 1s;
+}
+
+.full-logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.tagline {
+    font-family: "Oswald", san-serif;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+    font-weight: 100;
+    color: #699bcf;
+}
+
+.stats-tagline {
+    font-family: "Oswald", san-serif;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+    font-weight: 100;
+    color: #699bcf;
+}
+
+.stats-logo {
+    font-family: "Montserrat", san-serif;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 0.15em;
+    font-weight: 100;
+    color: #699bcf;
+}
+
+.fa-chevron-circle-down {
+    font-size: 50px;
+    Margin-top: 150px;
+    color: #e0443c;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*--------------------------------------------About Us Section*/
+
+.aboutus-section {
+    background-color: #fff;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #212121;
+}
+
+.about-us-text {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgb(71, 71, 71);
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.fa-cogs,
+.fa-question-circle {
+    font-size: 50px;
+    Margin-top: 20px;
+    color: #e0443c
+}
+
+
+/*--------------------------------------------results & stats*/
+
+.results-section {
+    background-color: #475867;
+    height: 100%;
+}
+
+.results-heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fafafa;
+}
+
+.results-message {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #fafafa;
+}
+
+.stats-section {
+    background-color: #f3f3f3;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+.stats-heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+
+.stats-message {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #1d1d1d;
+}
+
+.chart-section {
+    background-color: #475867;
+    padding-bottom: 50px;
+}
+
+
+/*stackoverflow*/
+
+#chart {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*--------------------------------------------contact form*/
+
+.fa-envelope-open-text {
+    font-size: 50px;
+    Margin-top: 20px;
+    color: #e0443c;
+}
+
+.contact-section {
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.616), #475867), url(../images/horse-racing1.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.contact-message {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #212121;
+}
+
+.center-form {
+    font-family: "source sans pro", sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 10px;
+    margin: 0px auto;
+    max-width: 60%;
+    text-align: center;
+}
+
+.form-margin {
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    font-family: "Proxima Nova", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #212121;
+    background-color: #45D6A3;
+    border: 0.5px;
+}
+
+.btn-secondary:hover {
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #699bcf;
+    color: #212121;
+    transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    -webkit-transition: all 0.50s ease-in-out;
+    -o-transition: all 0.50s ease-in-out;
+}
+
+.alert {
+    display: none;
+}
+
+
+/*--------------------------------------------Course Section*/
+
+.course-heading h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+.course-heading h5 {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.05;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #212121
+}
+
+#map {
+    min-height: 800px;
+    margin: 50px;
+    margin-top: 50px;
+}
+
+
+/*--------------------------------------------Affiliates*/
+
+.affiliate-heading {
+    background-color: #bebebe;
+    text-align: center;
+}
+
+.affiliate-heading h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #212121
+}
+
+.affiliate-message {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.05;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #212121
+}
+
+#affiliate-link {
+    padding: 40px;
+    min-height: 200px;
+    background-color: #bebebe;
+    color: #212121;
+}
+
+.bookie {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.bookie-logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.offer-text {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgb(71, 71, 71);
+    padding-bottom: 20px;
+}
+
+
+/*--------------------------------------------Footer*/
+
+footer {
+    background-color: #475867;
+    color: #fafafa;
+    min-height: 60px;
+}
+
+.legal {
+    color: #fafafa;
+}
+
+.legal:hover {
+    color: #45D6A3;
+}
+
+.userguide i {
+    color: #fafafa;
+    padding-left: 5px;
+}
+
+.userguide i:hover,
+.social-links li a i:hover {
+    color: #45D6A3;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    margin: 2px;
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 20%;
+    line-height: 7px;
+    color: #212121;
+    background: #fafafa;
+}
+
+.userguide i,
+.social-links li a i {
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#footer-details {
+    padding: 30px;
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+.footer-heading {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    color: #fafafa;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+/*--------------------------------------------media queries*/
+
+@media(max-width: 1131px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 70%;
+        text-align: center;
+    }
+    .bg-img {
+        max-height: 800px;
+    }
+    .stats-logo {
+        font-size: 60px;
+    }
+    .stats-tagline,
+    .tagline {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:412px) {
+    .stats-tagline,
+    .stats-logo {
+        font-size: 30px;
+    }
+    .tagline,
+    .stats-tagline {
+        font-size: 17px;
+    }
+    .bg-img,
+    .bg-stat {
+        max-height: 700px;
+    }
+    #stat-logo {
+        margin-bottom: -70px;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+    .fa-cogs,
+    .fa-question-circle {
+        font-size: 35px;
+        Margin-top: 15px;
+    }
+    .fa-chevron-circle-down {
+        font-size: 35px;
+    }
+    .about-heading {
+        font-size: 25px;
+    }
+    .nav-link {
+        color: rgb(54, 167, 127);
+    }
+}
